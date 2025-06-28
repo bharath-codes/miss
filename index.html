@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Miss You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f3e5ab;
+      color: #4e342e;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(78, 52, 46, 0.2) 0,
+        rgba(78, 52, 46, 0.2) 1.5em
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(78, 52, 46, 0.2) 0,
+        rgba(78, 52, 46, 0.2) 8em
+      );
+      background-size: 10em 3em;
+    }
+
+    .text-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: rgba(78, 52, 46, 0.1);
+      pointer-events: none;
+      line-height: 1.5em;
+    }
+
+    .text-overlay span {
+      margin: 0.5em;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      background-color: #fff8e1;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      margin-top: 80px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #6d4c41;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .flower-image-inline {
+    
+      float: left;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+
+    .flower-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 0 20px;
+    }
+
+    .flower-gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .heart {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1) translateX(-50%); }
+      50% { transform: scale(1.1) translateX(-50%); }
+      100% { transform: scale(1) translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="text-overlay">
+    <script>
+      const overlay = document.currentScript.parentElement;
+      const rows = 20;
+      const cols = 20;
+      for(let i = 0; i < rows * cols; i++) {
+        const span = document.createElement('span');
+        span.textContent = "I miss you";
+        overlay.appendChild(span);
+      }
+    </script>
+  </div>
+
+  <div class="container">
+    <h1>My Love,</h1>
+    <p>My love, I genuinely can’t be without you, I miss you so much, more than
+        words could ever hold, I miss even the simplest things, like just
+        talking to you, that’s why I’m writing this, because I miss you, your
+        voice, your presence, and even the silence we share, every part of you
+        lingers in my heart like a melody I never want to stop hearing. Call me
+        clingy, call me a crybaby if you want, but the truth is, I’m deeply,
+        madly, and hopelessly in love with you, you’re not just someone I love,
+        you’re my beautiful addiction, a soul I never want to unlearn, a
+        presence I never want to live without, even the thought of being without
+        you, it scares me more than anything else in this world. Even if we go
+        just one day without talking, it feels like I’m being pulled into some
+        kind of darkness, like today, it felt empty, like something within me
+        was missing, maybe I feel too much, maybe I care too deeply, but I’m not
+        trying to demand anything, I understand the situations, I just want you to know how much you truly
+        mean to me. I don’t compare us with anyone else, I never will, I don’t
+        care if some people feel relief when their girl doesn’t talk to them for
+        a while or takes a break, I’m not them, I’m me, and I can’t, even if I
+        have people around me, even if I have a hundred things to do, or a movie
+        playing in front of me, my mind and my heart are still with you, always,
+        only you. I miss being right beside you,
+        seeing you, holding your hands, your smell, feeling your
+        warmth, I miss the way your fingers would intertwine with mine, I miss
+        the comfort of our hug, the soft calm of your voice, and yes, of
+        course, I miss kissing you, that kiss, it's a blessing I’ll never take
+        for granted. I just want this distance to end, I want to be near you
+        again, to look at you, not through a screen, not through a memory, but
+        in real, breathing, heart-thumping presence. Until that moment comes,
+        just know this, I love you endlessly, and I’ll keep loving you with
+        every beat my heart dares to give.
+      </p>
+      <img src="https://i.pinimg.com/736x/6d/62/e3/6d62e3872b25db545082a630a7cec9bb.jpg" alt="Flower beside " class="flower-image-inline" />
+      <p style="text-align: right; margin-top: 30px">
+        <b>With all the love in the world,<br />Bharath<b>
+      </p>
+  </div>
+
+
+  <div class="heart">💌</div>
+</body>
+</html>
